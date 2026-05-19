@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+__pycache__/
+*.pyc
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -82,6 +84,10 @@ out
 .nuxt
 dist
 .output
+
+# Keep built entrypoint checked in for static site hosting
+!dist/
+!dist/**
 
 # Gatsby files
 .cache/
