@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft Builder Tools</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #10131a;
+      color: #f4f6fb;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .tools {
+      display: grid;
+      gap: 1rem;
+      max-width: 960px;
+    }
+
+    .tool {
+      border: 1px solid #2a3343;
+      border-radius: 8px;
+      background: #171d28;
+      overflow: hidden;
+    }
+
+    .tool summary {
+      cursor: pointer;
+      padding: 1rem;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    .tool summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .tool summary::after {
+      content: "+";
+      float: right;
+      color: #94a8c9;
+    }
+
+    .tool[open] summary::after {
+      content: "−";
+    }
+
+    .tool-content {
+      border-top: 1px solid #2a3343;
+      padding: 1rem;
+      color: #c6d2e5;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Minecraft Builder Tools</h1>
+    <p>Choose a tool below to get started.</p>
+
+    <section class="tools" aria-label="Tool list">
+      <details class="tool" id="circle-plotter" open>
+        <summary>Circle Plotter</summary>
+        <div class="tool-content">
+          <p>Circle Plotter UI placeholder. Tool implementation coming soon.</p>
+        </div>
+      </details>
+
+      <details class="tool" id="line-plotter">
+        <summary>Line Plotter</summary>
+        <div class="tool-content">
+          <p>Placeholder for future tool.</p>
+        </div>
+      </details>
+
+      <details class="tool" id="polygon-plotter">
+        <summary>Polygon Plotter</summary>
+        <div class="tool-content">
+          <p>Placeholder for future tool.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script type="module" class="entrypoint" src="dist/bundle-entry.js"></script>
+</body>
+</html>

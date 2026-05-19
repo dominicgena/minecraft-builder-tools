@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/ts/bundle-entry.ts"],
+  "sourcesContent": ["document.addEventListener('DOMContentLoaded', () => {\n});\n"],
+  "mappings": ";AAAA,SAAS,iBAAiB,oBAAoB,MAAM;AACpD,CAAC;",
+  "names": []
+}

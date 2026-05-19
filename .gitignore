@@ -83,6 +83,10 @@ out
 dist
 .output
 
+# Keep built entrypoint checked in for static site hosting
+!dist/
+!dist/**
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
